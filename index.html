@@ -59,7 +59,6 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Os iPhones seminovos têm garantia?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Os seminovos da IG Shop têm 1 ano de garantia." } },
-    { "@type": "Question", "name": "Dá para financiar o iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A IG Shop financia iPhones em até 24x." } },
     { "@type": "Question", "name": "Vocês compram o meu iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A IG Shop compra iPhones seminovos com caixa, do iPhone 13 ao 17 Pro Max." } },
     { "@type": "Question", "name": "Igor iPhones e IG Shop são a mesma loja?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A Igor iPhones agora se chama IG Shop." } },
     { "@type": "Question", "name": "Vocês vendem produtos Apple lacrados?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. AirPods, AirTag e Apple Pencil lacrados, com 1 ano de garantia." } }
@@ -280,43 +279,6 @@ section{ position:relative }
 .showcase__img img{ width:100%; height:auto; mix-blend-mode:multiply }
 .showcase__img::after{ content:""; position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 0 1px rgba(0,27,113,.07); border-radius:inherit }
 
-
-/* ---------- Financiamento ---------- */
-.finance{ padding-block:var(--sec); overflow:hidden; background:radial-gradient(80% 120% at 100% 0%, var(--navy-2) 0%, var(--navy) 55%) }
-.finance__grid{ display:grid; gap:clamp(40px,6vw,88px); align-items:end }
-@media (min-width:1000px){ .finance__grid{ grid-template-columns:1.15fr .85fr } }
-.finance h2{ font-size:clamp(2.2rem,4.8vw,3.8rem); letter-spacing:-.045em; margin-top:20px; max-width:16ch }
-.finance__n{ display:block; font-size:clamp(7rem, 22vw, 17rem); line-height:.82; letter-spacing:-.07em; margin-top:.08em; color:transparent; -webkit-text-stroke:2px #fff;
-  background:linear-gradient(100deg, rgba(255,255,255,.95) 0 50%, transparent 50%); background-size:220% 100%; background-position:100% 0; -webkit-background-clip:text; background-clip:text; transition:background-position 2.4s var(--ease) }
-.finance.is-lit .finance__n{ background-position:0 0 }
-.finance__line{ font-size:clamp(1.6rem,3.2vw,2.6rem); color:var(--sky); margin-top:16px }
-.installments{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:6px; margin-bottom:28px }
-.installments li{ height:10px; border-radius:999px; background:rgba(255,255,255,.14); transition:background .4s }
-.finance.is-lit .installments li{ background:var(--sky) }
-.finance.is-lit .installments li:nth-child(1){ transition-delay:0ms }
-.finance.is-lit .installments li:nth-child(2){ transition-delay:60ms }
-.finance.is-lit .installments li:nth-child(3){ transition-delay:120ms }
-.finance.is-lit .installments li:nth-child(4){ transition-delay:180ms }
-.finance.is-lit .installments li:nth-child(5){ transition-delay:240ms }
-.finance.is-lit .installments li:nth-child(6){ transition-delay:300ms }
-.finance.is-lit .installments li:nth-child(7){ transition-delay:360ms }
-.finance.is-lit .installments li:nth-child(8){ transition-delay:420ms }
-.finance.is-lit .installments li:nth-child(9){ transition-delay:480ms }
-.finance.is-lit .installments li:nth-child(10){ transition-delay:540ms }
-.finance.is-lit .installments li:nth-child(11){ transition-delay:600ms }
-.finance.is-lit .installments li:nth-child(12){ transition-delay:660ms }
-.finance.is-lit .installments li:nth-child(13){ transition-delay:720ms }
-.finance.is-lit .installments li:nth-child(14){ transition-delay:780ms }
-.finance.is-lit .installments li:nth-child(15){ transition-delay:840ms }
-.finance.is-lit .installments li:nth-child(16){ transition-delay:900ms }
-.finance.is-lit .installments li:nth-child(17){ transition-delay:960ms }
-.finance.is-lit .installments li:nth-child(18){ transition-delay:1020ms }
-.finance.is-lit .installments li:nth-child(19){ transition-delay:1080ms }
-.finance.is-lit .installments li:nth-child(20){ transition-delay:1140ms }
-.finance.is-lit .installments li:nth-child(21){ transition-delay:1200ms }
-.finance.is-lit .installments li:nth-child(22){ transition-delay:1260ms }
-.finance.is-lit .installments li:nth-child(23){ transition-delay:1320ms }
-.finance.is-lit .installments li:nth-child(24){ transition-delay:1380ms }
 
 /* ---------- Diferenciais ---------- */
 .why{ padding-block:var(--sec) }
@@ -578,7 +540,6 @@ section{ position:relative }
     </a>
     <nav class="nav" aria-label="Principal">
       <a href="#iphones">iPhones</a>
-      <a href="#financiamento">Financiamento</a>
       <a href="#diferenciais">Diferenciais</a>
       <a href="#clientes">Clientes</a>
       <a href="#localizacao">Localização</a>
@@ -598,7 +559,7 @@ section{ position:relative }
     <div>
       <span class="eyebrow">IG Shop RJ · Queimados – RJ</span>
       <h1 id="hero-title">O iPhone que você procura. <span class="serif">A garantia que você merece.</span></h1>
-      <p class="lead">iPhones <strong>seminovos com 1 ano de garantia</strong>, <strong>financiamento em até 24x</strong>, produtos Apple lacrados e a compra do seu iPhone atual. Mais de <strong>5.000 clientes</strong> já escolheram a IG Shop.</p>
+      <p class="lead">iPhones <strong>seminovos com 1 ano de garantia</strong>, produtos Apple lacrados e a compra do seu iPhone atual. Mais de <strong>5.000 clientes</strong> já escolheram a IG Shop.</p>
       <div class="cta-row">
         <a class="btn" href="#iphones" data-track="cta-hero-ver-iphones">Ver iPhones
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
@@ -713,29 +674,6 @@ section{ position:relative }
     </div>
     <div class="showcase__img" data-reveal>
       <img src="assets/img/dois-iphones.webp" width="1237" height="814" loading="lazy" decoding="async" alt="Duas mãos segurando dois iPhones Pro, um rosé e um grafite, lado a lado">
-    </div>
-  </div>
-</section>
-
-<!-- ============ FINANCIAMENTO ============ -->
-<section class="finance on-navy" id="financiamento" aria-labelledby="fin-title">
-  <div class="wrap">
-    <div class="finance__grid">
-      <div>
-        <span class="eyebrow" data-reveal>Financiamento</span>
-        <h2 id="fin-title" data-reveal>Financie seu iPhone em até <span class="finance__n">24x</span></h2>
-        <p class="finance__line serif" data-reveal>As parcelas acabam. O sonho continua.</p>
-      </div>
-      <div class="finance__side">
-        <ol class="installments" aria-label="Até 24 parcelas" data-reveal>
-          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-        </ol>
-        <p class="lead" data-reveal>Escolha o modelo e chame no WhatsApp. A equipe da IG Shop te mostra as condições para dividir o seu iPhone <strong>em até 24 vezes</strong>.</p>
-        <div class="cta-row" style="margin-top:28px" data-reveal>
-          <a class="btn btn--solid" data-wa data-track="cta-financiamento" data-msg="Olá! Vim pelo site da IG Shop RJ e quero simular o financiamento de um iPhone em até 24x. Modelo de interesse: " href="https://wa.me/5521990055932" target="_blank" rel="noopener">Simular meu financiamento</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -897,7 +835,6 @@ section{ position:relative }
       <div class="acc-list">
         <details class="qa"><summary>Os iPhones seminovos têm garantia?<i aria-hidden="true"></i></summary><div class="qa__a">Sim. Os seminovos da IG Shop têm <strong>1 ano de garantia</strong>.</div></details>
         <details class="qa"><summary>Igor iPhones e IG Shop são a mesma loja?<i aria-hidden="true"></i></summary><div class="qa__a">Sim. A Igor iPhones agora se chama <strong>IG Shop</strong>. Mesmo dono, mesmo atendimento e o mesmo WhatsApp: (21) 99005-5932.</div></details>
-        <details class="qa"><summary>Dá para financiar o iPhone?<i aria-hidden="true"></i></summary><div class="qa__a">Sim. Você pode financiar o seu iPhone <strong>em até 24x</strong>. Chame no WhatsApp para ver as condições do modelo que você quer.</div></details>
         <details class="qa"><summary>Vocês compram o meu iPhone?<i aria-hidden="true"></i></summary><div class="qa__a">Sim. Compramos iPhones <strong>seminovos com caixa, do iPhone 13 ao 17 Pro Max</strong>. Mande o modelo pelo WhatsApp para começar.</div></details>
         <details class="qa"><summary>Vocês vendem produtos Apple lacrados?<i aria-hidden="true"></i></summary><div class="qa__a">Sim. AirPods, AirTag e Apple Pencil lacrados, com <strong>1 ano de garantia</strong>. Consulte os valores do dia pelo WhatsApp.</div></details>
         <details class="qa"><summary>A loja trabalha só com Apple?<i aria-hidden="true"></i></summary><div class="qa__a">O foco é iPhone, mas a loja também trabalha com <strong>Samsung, Xiaomi, acessórios e manutenção</strong>.</div></details>
@@ -945,7 +882,6 @@ section{ position:relative }
               <option>iPhone 13</option><option>iPhone 14</option><option>iPhone 15</option><option>iPhone 16</option><option>iPhone 17</option>
               <option>Linha Pro / Pro Max</option>
               <option>Produtos Apple lacrados</option>
-              <option>Quero financiar em até 24x</option>
               <option>Quero vender meu iPhone</option>
               <option>Ainda não sei, quero ajuda</option>
             </select>
@@ -1023,7 +959,6 @@ section{ position:relative }
       <ul>
         <li><a href="#inicio">Início</a></li>
         <li><a href="#iphones">iPhones</a></li>
-        <li><a href="#financiamento">Financiamento</a></li>
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#localizacao">Localização</a></li>
         <li><a data-wa data-track="cta-footer-whatsapp" data-msg="Olá! Vim pelo site da IG Shop RJ e gostaria de saber quais iPhones estão disponíveis." href="https://wa.me/5521990055932" target="_blank" rel="noopener">WhatsApp</a></li>
@@ -1154,11 +1089,6 @@ const REVIEWS = [
       if (el.getBoundingClientRect().top > innerHeight * .92){ el.classList.add('is-pre'); el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el) }
     });
   }
-
-  /* ---------- Financiamento: 24 parcelas acendem ao entrar na tela ---------- */
-  const fin = $('.finance');
-  if (reduce) fin.classList.add('is-lit');
-  else new IntersectionObserver((en, o) => { if (en[0].isIntersecting){ fin.classList.add('is-lit'); o.disconnect() } }, { threshold:.35 }).observe(fin);
 
   /* ---------- Parallax mínimo no hero ---------- */
   const stage = $('[data-parallax]');
